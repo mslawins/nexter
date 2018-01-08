@@ -1,0 +1,57 @@
+.container {
+  display: grid;
+
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, minmax(min-content, 14rem)) [center-end] minmax(6rem, 1fr) [full-end];
+
+  font-size: 2rem;
+}
+
+.sidebar {
+  background-color: chocolate; 
+
+  grid-row: 1 / -1;
+  grid-column: sidebar-start / sidebar-end;
+}
+
+.header {
+  background-color: cornflowerblue;
+
+  grid-row: 1 / 2;
+  grid-column: full-start / full-end; 
+}
+
+.assets {
+  background-color: darkgreen;
+
+  grid-row: 2 / 3;
+  grid-column: center-start / center-end;
+}
+
+.testimonials {
+  background-color: darkolivegreen;
+
+  grid-row: 3 / 4;
+  grid-column: full-start / full-end; 
+}
+
+.offer {
+  background-color:  darkcyan;
+
+  grid-row: 4 / 5;
+  grid-column: center-start / center-end;
+}
+
+.gallery {
+  background-color:  turquoise;
+
+  grid-row: 5 / 6;
+  grid-column: full-start / full-end; 
+}
+
+.footer {
+  background-color:  thistle;
+
+  grid-row: 6 / 7;
+  grid-column: full-start / full-end; 
+}
