@@ -7,51 +7,37 @@
   font-size: 2rem;
 }
 
-.sidebar {
-  background-color: chocolate; 
-
+ms-sidebar {
   grid-row: 1 / -1;
   grid-column: sidebar-start / sidebar-end;
 }
 
-.header {
-  background-color: cornflowerblue;
-
+ms-header {
   grid-row: 1 / 2;
   grid-column: full-start / full-end; 
 }
 
-.assets {
-  background-color: darkgreen;
-
+ms-assets {
   grid-row: 2 / 3;
   grid-column: center-start / center-end;
 }
 
-.testimonials {
-  background-color: darkolivegreen;
-
+ms-testimonials {
   grid-row: 3 / 4;
   grid-column: full-start / full-end; 
 }
 
-.offer {
-  background-color:  darkcyan;
-
+ms-offer {
   grid-row: 4 / 5;
   grid-column: center-start / center-end;
 }
 
-.gallery {
-  background-color:  turquoise;
-
+ms-gallery {
   grid-row: 5 / 6;
   grid-column: full-start / full-end; 
 }
 
-.footer {
-  background-color:  thistle;
-
+ms-footer {
   grid-row: 6 / 7;
   grid-column: full-start / full-end; 
 }
