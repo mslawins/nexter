@@ -1,5 +1,45 @@
 @import 'src/app/resources';
 
 .footer {
+  padding: 8rem;
   background-color: $color-primary-2;
+}
+
+nav {
+  font-family: $font-secondary;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 300;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .nav-item {
+    padding: 1.5rem; 
+    transition: all .2s;
+
+    &:hover {
+      transform: translateY(-3px);
+      background-color: rgba(255, 255, 255, .05);
+    }
+  }
+}
+
+.copyright {
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 1.4rem;
+  color: $color-details-2;
+  width: 70%;
+
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary-3;
 }
