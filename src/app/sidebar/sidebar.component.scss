@@ -1,6 +1,41 @@
 @import 'src/app/resources';
 
+$menu-top-margin: 4rem;
+$menu-width: 4.5rem;
+$menu-height: .2rem;
+$menu-spacing: 1.5rem;
+
 .sidebar {
   height: 100%;
   background-color: $color-primary-1; 
+
+  display: flex;
+  justify-content: center;
+
+  .menu {
+    margin-top: $menu-top-margin;
+
+    width: $menu-width;
+    height: $menu-height;
+    
+    background-color: $color-primary-3;
+    border: none;
+
+    &::before,
+    &::after {
+      content: ''; 
+      display: block;
+      width: $menu-width;
+      height: $menu-height;
+      background-color: $color-primary-3;
+    }
+
+    &:before {
+      transform: translateY(-($menu-spacing));
+    }
+
+    &::after {
+      transform: translateY($menu-spacing - $menu-height);
+    }
+  }
 }
