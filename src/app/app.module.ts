@@ -10,6 +10,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { OfferComponent } from './offer/offer.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
+import { RealtorsComponent } from './realtors/realtors.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     TestimonialsComponent,
     OfferComponent,
     GalleryComponent,
-    FooterComponent
+    FooterComponent,
+    RealtorsComponent
   ],
   imports: [
     BrowserModule
