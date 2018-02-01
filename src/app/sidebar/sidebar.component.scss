@@ -21,6 +21,8 @@ $menu-spacing: 1.5rem;
     background-color: $color-primary-3;
     border: none;
 
+    cursor: pointer;
+
     &::before,
     &::after {
       content: ''; 

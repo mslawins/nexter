@@ -62,24 +62,7 @@
     }
   }
 
-  .contact {
+  .button { 
     width: 100%;
-    padding: 1.8rem 3rem;
-
-    background-color: $color-primary-1; 
-    color: $color-primary-3;
-
-    font-family: $font-secondary;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-
-    border: none;
-    cursor: pointer;
-
-    transition: all .2s;
-
-    &:hover {
-      background-color: $color-details-4;
-    }
   }
 }
