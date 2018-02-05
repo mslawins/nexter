@@ -10,6 +10,10 @@ $icon-size: 4.5rem;
   grid-gap: 6rem;
   grid-template-columns: repeat(3, minmax(25rem, 1fr));
 
+  @include respond-to(bp-small) {
+    grid-template-columns: repeat(2, minmax(25rem, 1fr));
+  }
+
   .asset {
     display: grid;
     grid-template-columns: $icon-size 1fr;

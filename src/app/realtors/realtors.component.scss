@@ -20,6 +20,12 @@
   .list {
     display: grid;
     grid-row-gap: 5vh;
+    
+    @include respond-to(bp-very-small) {
+      grid-template-columns: repeat(3, 1fr);
+
+      & > * { margin-right: 2rem; }
+    }
   }
 
   .realtor {

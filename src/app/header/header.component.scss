@@ -7,6 +7,10 @@
   display: grid;
   grid-template-columns: 7fr 3fr;
 
+  @include respond-to(bp-very-small) {
+    grid-template-columns: 100%;
+  }
+
   .main {
     padding: 8rem;
     background-image: linear-gradient(rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url('../../assets/back.jpg');

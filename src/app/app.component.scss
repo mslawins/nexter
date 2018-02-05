@@ -1,41 +1,51 @@
+@import 'src/app/resources';
+
 .container {
   display: grid;
 
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, minmax(min-content, 14rem)) [center-end] minmax(6rem, 1fr) [full-end];
+
+  @include respond-to(bp-medium) {
+    grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, minmax(min-content, 14rem)) [center-end] minmax(6rem, 1fr) [full-end];
+  }
+
+  @include respond-to(bp-very-small) {
+    grid-template-rows: 6rem repeat(2, min-content) 40vw repeat(3, min-content);
+  }
 }
 
 ms-sidebar {
   grid-row: 1 / -1;
   grid-column: sidebar-start / sidebar-end;
+
+  @include respond-to(bp-medium) {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
 }
 
 ms-header {
-  grid-row: 1 / 2;
   grid-column: full-start / full-end; 
 }
 
 ms-assets {
-  grid-row: 2 / 3;
   grid-column: center-start / center-end;
 }
 
 ms-testimonials {
-  grid-row: 3 / 4;
   grid-column: full-start / full-end; 
 }
 
 ms-offer {
-  grid-row: 4 / 5;
   grid-column: center-start / center-end;
 }
 
 ms-gallery {
-  grid-row: 5 / 6;
   grid-column: full-start / full-end; 
 }
 
 ms-footer {
-  grid-row: 6 / 7;
   grid-column: full-start / full-end; 
 }

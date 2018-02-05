@@ -10,3 +10,21 @@ $color-details-5: #54483a;
 
 $font-primary: 'Nunito Sans', sans-serif;
 $font-secondary: 'Josefin Sans', sans-serif;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == bp-very-small {
+    @media only screen and (max-width: 43.75em) { @content }; 
+  }
+
+  @if $breakpoint == bp-small {
+    @media only screen and (max-width: 56.25em) { @content }; 
+  }
+
+  @if $breakpoint == bp-medium {
+    @media only screen and (max-width: 62.5em) { @content }; 
+  }
+
+  @if $breakpoint == bp-large {
+    @media only screen and (max-width: 75em) { @content }; 
+  }
+}

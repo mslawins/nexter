@@ -12,8 +12,18 @@ $menu-spacing: 1.5rem;
   display: flex;
   justify-content: center;
 
+  @include respond-to(bp-medium) {
+    align-items: center; 
+    justify-content: flex-start;
+  }
+
   .menu {
     margin-top: $menu-top-margin;
+
+    @include respond-to(bp-medium) {
+      margin-top: 0;
+      margin-left: 2rem;
+    }
 
     width: $menu-width;
     height: $menu-height;

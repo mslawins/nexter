@@ -1,7 +1,18 @@
 @import 'src/app/resources';
 
 .offer {
-  margin: 12rem 0;
+  margin: 15rem 0;
+
+  @include respond-to(bp-small) {
+    margin-top: 25rem;
+    margin-bottom: 12.5rem; 
+  }
+
+  @include respond-to(bp-very-small) {
+    margin-top: 35rem;
+    margin-bottom: 15rem; 
+  
+  }
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
