@@ -1,6 +1,8 @@
 # Nexter
 
-Design of Nexter project by [Jonas Schmedtmann](http://codingheroes.io). Implementation based on Angular framework by [Marek Sławiński](https://github.com/mslawins).
+Design of Nexter project by [Jonas Schmedtmann](http://codingheroes.io). Code by [Marek Sławiński](https://github.com/mslawins).
+
+Built using Angular & CSS Grid.
 
 ## Development server
 
